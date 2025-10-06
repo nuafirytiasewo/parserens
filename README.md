@@ -11,18 +11,17 @@
 ## 📂 Структура проекта
 
 ```sh
-ergy-parser/
+energy-parser/
 │
 ├── .env                # Переменные окружения
 ├── .gitignore          # Исключаемые файлы
 ├── README.md           # Документация
 ├── tables/
-│   ├── data.csv        # Итоговые обработанные данные
+│   └── data.csv        # Итоговые обработанные данные
 │
 ├── main.py             # Основной парсер (сбор данных из сообщений и преобразование в CSV)
 ├── localparser.py      # Обработчик данных для FastAPI
-├── requirements.txt    # Список зависимостей
-├── venv/               # Виртуальное окружение
+└── requirements.txt    # Список зависимостей
 ```
 
 ---
@@ -31,16 +30,16 @@ ergy-parser/
 
 ### 1️⃣ Подготовка окружения
 
-#### 📌 Установка зависимостей
-```bash
-pip install -r requirements.txt
-```
-
 #### 🔧 Создание и активация виртуального окружения
 ```bash
 python -m venv venv
 venv\Scripts\activate  # Windows
 source venv/bin/activate  # Linux/macOS
+```
+
+#### 📌 Установка зависимостей
+```bash
+pip install -r requirements.txt
 ```
 
 #### 📋 Настройка .env
@@ -101,4 +100,5 @@ pip uninstall -y -r requirements.txt
 ```
 
 ---
+
 
